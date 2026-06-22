@@ -30,7 +30,15 @@
 # Print 1, 2, 3, 4, 5 (each on its own line).
 # Hint: start n = 1; loop while n <= 5; print n; then n = n + 1
 # YOUR CODE HERE
-
+# The shape of every while-loop:
+#       <set up a variable>
+#       while <condition is True>:
+#           <do something>
+#           <CHANGE the variable>   # <-- or it runs FOREVER!
+n = 1 # <set up a variable>
+while n <= 5: # while <condition is True>:
+  print("First Occurrence of n:", n) # <do something>
+  n = n + 1 # <CHANGE the variable>
 
 
 # ----------------------------------------------------------
@@ -38,7 +46,11 @@
 # ----------------------------------------------------------
 # Expected: 5 4 3 2 1 then Lift off!
 # YOUR CODE HERE
-
+lift_off = 5
+while lift_off >= 1:
+  print("First Occurrence of lift_off:", lift_off)
+  lift_off = lift_off - 1
+print("Lift off!")
 
 
 # ----------------------------------------------------------
@@ -48,8 +60,12 @@
 # Expected: 55
 # Hint: keep a 'total' AND a counter 'n'; loop while n <= 10.
 # YOUR CODE HERE
-
-
+var = 1
+total = 0
+while var <= 10:
+  total = total + var
+  var = var + 1
+print("Total:", total)
 
 # ----------------------------------------------------------
 # DRILL 4: Keep doubling until past 1000
@@ -59,7 +75,10 @@
 # Expected: 1 2 4 8 16 32 64 128 256 512
 # YOUR CODE HERE
 
-
+n = 1
+while n < 1000:
+  print(n)
+  n = n * 2
 
 # ----------------------------------------------------------
 # DRILL 5: Sum numbers 1, 2, 3... and STOP once total passes 20
@@ -70,6 +89,12 @@
 #  front how many numbers it takes.)
 # Expected: 21   (1+2+3+4+5+6 = 21, which is the first time it passes 20)
 # YOUR CODE HERE
+total = 0
+n = 1
+while n <= 20:
+  total = total + n
+  n = n + 1
+  print("Total:", total)
 
 
 

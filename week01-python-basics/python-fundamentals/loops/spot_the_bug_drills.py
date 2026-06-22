@@ -30,7 +30,8 @@ for n in nums:
 print("Bug 1:", result)
 # What does it REALLY print, and what should the line be?
 # YOUR FIX (as a comment):
-
+the actual counting of the numbers, not the sum. It prints 3, not 60.
+# Fix:  result = result + n
 
 
 # ----------------------------------------------------------
@@ -43,7 +44,7 @@ for v in values:
         above = above + v      # <-- count, or add the value?
 print("Bug 2:", above)
 # YOUR FIX:
-
+# Fix: above = above + 1
 
 
 # ----------------------------------------------------------
@@ -59,7 +60,7 @@ for s in scores:
         failed = failed + 1
 print("Bug 3:", failed)        # <-- printing the right variable?
 # YOUR FIX:
-
+# Fix: print("Bug 3:", passed)
 
 
 # ----------------------------------------------------------
@@ -72,7 +73,7 @@ for name, score in marks.items():
         count = count + 1
 print("Bug 4:", count)
 # YOUR FIX:
-
+# Fix: if score >= 60:
 
 
 # ----------------------------------------------------------
@@ -86,7 +87,7 @@ for n in data:
 print("Bug 5:", lowest)
 # Why does this print 0? What should 'lowest' start at?
 # YOUR FIX:
-
+# Fix: lowest = data[0]
 
 
 # ----------------------------------------------------------
@@ -102,6 +103,11 @@ for m in marks2:
 # It prints 3 times (a running average each round) instead of
 # one final answer. Where should the print go?
 # YOUR FIX:
+# Fix: Move print OUT of the loop so it runs once, after:
+#       for m in marks2:
+#           total = total + m
+#           count2 = count2 + 1
+#       print(total / count2)        # 20.0
 
 
 
